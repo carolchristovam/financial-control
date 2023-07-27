@@ -14,5 +14,9 @@ class Controls : AppCompatActivity() {
         binding = ActivityControlsBinding.inflate(layoutInflater)
 
         setContentView(binding.root)
+
+        binding.arrowBack.setOnClickListener{
+            finish()
+        }
     }
 }
