@@ -4,4 +4,8 @@
     <string name="last_name">Last name</string>
     <string name="enter">Enter</string>
     <string name="enter_your_name_and_last_name">Enter your name and last name to login</string>
+    <string name="categories">Categories</string>
+    <string name="supermarket">Supermarket</string>
+    <string name="financial_control">Financial Control</string>
+    <string name="home_expenses">Home Expenses</string>
 </resources>
