@@ -1,7 +1,9 @@
 package com.example.financial_control
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.service.controls.Control
 import android.widget.Toast
 import com.example.financial_control.databinding.ActivityMainBinding
 
@@ -18,6 +20,8 @@ class MainActivity : AppCompatActivity() {
         binding.buttonEnter.setOnClickListener() {
             val name = binding.textName.text.toString().trim()
             val lastName = binding.textLastName.text.toString().trim()
+            val i = Intent(this, Controls::class.java)
+
 
             if (name.isEmpty() || lastName.isEmpty()) {
                 binding.textMessage.text = "Enter your name and last name to login"
@@ -29,6 +33,7 @@ class MainActivity : AppCompatActivity() {
             } else {
                 Toast.makeText(applicationContext, "Hello, $name $lastName", Toast.LENGTH_LONG)
                     .show()
+                startActivity(i)
             }
         }
     }
