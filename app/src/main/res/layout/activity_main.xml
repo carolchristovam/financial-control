@@ -38,21 +38,21 @@
         android:layout_marginStart="50dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="50dp"
+        android:backgroundTint="@color/yellow_app"
         android:gravity="center"
         android:text="@string/enter"
-        android:textColor="@color/black"
         android:textAllCaps="true"
-        app:layout_constraintTop_toBottomOf="@id/text_last_name"
-        android:backgroundTint="@color/yellow_app"/>
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/text_last_name" />
 
     <TextView
+        android:id="@+id/text_message"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/text_message"
-        android:text="@string/enter_your_name_and_last_name"
-        app:layout_constraintTop_toBottomOf="@id/button_enter"
         android:layout_marginTop="25dp"
         android:gravity="center_horizontal"
+        android:text="@string/enter_your_name_and_last_name"
+        app:layout_constraintTop_toBottomOf="@id/button_enter"
 
         />
 
