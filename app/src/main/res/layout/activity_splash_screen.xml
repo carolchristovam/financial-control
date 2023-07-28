@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/yellow_app"
+    android:background="@color/black"
     tools:context=".SplashScreenActivity">
 
     <TextView
@@ -15,7 +15,7 @@
         android:elevation="4dp"
         android:gravity="center_horizontal"
         android:text="@string/start_your_financial_control_to_grow"
-        android:textColor="@android:color/black"
+        android:textColor="#00BCD4"
         android:textSize="22sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

@@ -38,7 +38,7 @@
         android:layout_marginStart="50dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="50dp"
-        android:backgroundTint="@color/yellow_app"
+        android:backgroundTint="@color/blue_app"
         android:gravity="center"
         android:text="@string/enter"
         android:textAllCaps="true"
