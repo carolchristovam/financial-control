@@ -37,14 +37,16 @@
         android:elevation="4dp"
         android:src="@drawable/ic_arrow_back"
         app:layout_constraintBottom_toBottomOf="@id/text_financial"
-        app:layout_constraintTop_toTopOf="@id/text_financial" />
+        app:layout_constraintTop_toTopOf="@id/text_financial"
+        app:layout_constraintStart_toStartOf="parent"
+        />
 
     <TextView
         android:id="@+id/textViewTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="20dp"
         android:text="@string/categories"
         android:textColor="@color/black"
         android:textSize="20sp"
@@ -56,8 +58,8 @@
         android:id="@+id/text_supermarket"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="22dp"
         android:text="@string/supermarket"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -74,15 +76,205 @@
         app:layout_constraintStart_toEndOf="@id/text_supermarket"
         app:layout_constraintStart_toStartOf="@id/text_supermarket" />
 
+
+
     <TextView
         android:id="@+id/text_home"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="20dp"
         android:text="@string/home_expenses"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/text_supermarket" />
+
+    <TextView
+        android:id="@+id/text_pharmacy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/pharmacy"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_home" />
+
+    <TextView
+        android:id="@+id/text_restaurants"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/restaurants"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_pharmacy" />
+
+    <TextView
+        android:id="@+id/text_coffee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/coffee_shop"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_restaurants" />
+
+    <TextView
+        android:id="@+id/text_education"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/education"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_coffee" />
+
+    <TextView
+        android:id="@+id/text_transport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/transport"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_education" />
+
+    <TextView
+        android:id="@+id/text_fun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/fun"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_transport" />
+
+    <TextView
+        android:id="@+id/text_investment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="20dp"
+        android:text="Investments"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_fun" />
+
+    <TextView
+        android:id="@+id/text_shopping"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="20dp"
+        android:text="Shopping"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_investment" />
+
+    <ImageView
+        android:layout_width="27dp"
+        android:layout_height="27dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/ic_shopping"
+        app:layout_constraintEnd_toStartOf="@id/text_shopping"
+        app:layout_constraintTop_toTopOf="@id/text_shopping"
+        app:layout_constraintBottom_toBottomOf="@id/text_shopping"
+        android:id="@+id/ic_shopping"/>
+
+    <ImageView
+        android:layout_width="27dp"
+        android:layout_height="27dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/ic_fun"
+        app:layout_constraintEnd_toStartOf="@id/text_fun"
+        app:layout_constraintTop_toTopOf="@id/text_fun"
+        app:layout_constraintBottom_toBottomOf="@id/text_fun"
+        android:id="@+id/ic_fun" />
+
+    <ImageView
+        android:layout_width="27dp"
+        android:layout_height="27dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/ic_coffee"
+        app:layout_constraintEnd_toStartOf="@id/text_coffee"
+        app:layout_constraintTop_toTopOf="@id/text_coffee"
+        app:layout_constraintBottom_toBottomOf="@id/text_coffee"
+        android:id="@+id/ic_coffee" />
+
+    <ImageView
+        android:layout_width="27dp"
+        android:layout_height="27dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/ic_transport"
+        app:layout_constraintEnd_toStartOf="@id/text_transport"
+        app:layout_constraintTop_toTopOf="@id/text_transport"
+        app:layout_constraintBottom_toBottomOf="@id/text_transport"
+        android:id="@+id/ic_transport" />
+
+    <ImageView
+        android:layout_width="27dp"
+        android:layout_height="27dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/ic_investments"
+        app:layout_constraintEnd_toStartOf="@id/text_investment"
+        app:layout_constraintTop_toTopOf="@id/text_investment"
+        app:layout_constraintBottom_toBottomOf="@id/text_investment"
+        android:id="@+id/ic_investments" />
+
+    <ImageView
+        android:layout_width="27dp"
+        android:layout_height="27dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/ic_education"
+        app:layout_constraintEnd_toStartOf="@id/text_education"
+        app:layout_constraintTop_toTopOf="@id/text_education"
+        app:layout_constraintBottom_toBottomOf="@id/text_education"
+        android:id="@+id/ic_education" />
+
+    <ImageView
+        android:layout_width="27dp"
+        android:layout_height="27dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/ic_pharmacy"
+        app:layout_constraintEnd_toStartOf="@id/text_pharmacy"
+        app:layout_constraintTop_toTopOf="@id/text_pharmacy"
+        app:layout_constraintBottom_toBottomOf="@id/text_pharmacy"
+        android:id="@+id/ic_pharmacy" />
+
+    <ImageView
+        android:layout_width="27dp"
+        android:layout_height="27dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/ic_restaurants"
+        app:layout_constraintEnd_toStartOf="@id/text_restaurants"
+        app:layout_constraintTop_toTopOf="@id/text_restaurants"
+        app:layout_constraintBottom_toBottomOf="@id/text_restaurants"
+        android:id="@+id/ic_restaurants" />
+
+    <ImageView
+        android:layout_width="27dp"
+        android:layout_height="27dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/ic_home"
+        app:layout_constraintEnd_toStartOf="@id/text_home"
+        app:layout_constraintTop_toTopOf="@id/text_home"
+        app:layout_constraintBottom_toBottomOf="@id/text_home"
+        android:id="@+id/ic_home" />
+
+    <ImageView
+        android:layout_width="27dp"
+        android:layout_height="27dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/ic_supermarket"
+        app:layout_constraintEnd_toStartOf="@id/text_supermarket"
+        app:layout_constraintTop_toTopOf="@id/text_supermarket"
+        app:layout_constraintBottom_toBottomOf="@id/text_supermarket"
+        android:id="@+id/ic_supermarket" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
